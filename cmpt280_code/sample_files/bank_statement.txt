@@ -1,0 +1,16 @@
+========================================
+         BANK ACCOUNT STATEMENT
+========================================
+
+Account Holder: Abdulmajeed Aldery
+Account Number: 10293847
+Account Balance: $5000
+Last Transaction: -$20 (Coffee Shop)
+Account Status: Active
+
+Issued Date: 2025-03-05
+Bank Name: SecureBank Financial Group
+
+========================================
+      END OF ACCOUNT STATEMENT
+========================================
