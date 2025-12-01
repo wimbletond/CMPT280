@@ -48,4 +48,4 @@ RUN apt-get update && apt-get install -y \
     netcat \
     git
 
-CMD ["/cmpt280_code/malware/trojan.py"]
+#CMD ["/cmpt280_code/malware/trojan.py"]
