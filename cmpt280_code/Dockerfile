@@ -47,5 +47,5 @@ RUN apt-get update && apt-get install -y \
     libc6-i386 \
     libc6-dev-i386 \
     xinetd
-
-CMD start.sh
+RUN chmod +x jdbcsetup.sh
+CMD ["sh","start.sh"]
