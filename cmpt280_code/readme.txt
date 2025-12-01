@@ -1,8 +1,7 @@
 CMPT 280 Project - Malware Attack
 Dirk Wimbleton
-Abdul
-
-Sharma
+Abdulmajeed
+Shweta
 
 
 DOCKER SETUP - Containerize The Program #If Docker is installed, proceed to RUNNING DOCKER
