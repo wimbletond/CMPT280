@@ -46,9 +46,6 @@ RUN apt-get update && apt-get install -y \
     libgmp3-dev \
     libc6-i386 \
     libc6-dev-i386 \
-    lib32ncurses5-dev \
-    xinetd \
-    netcat \
-    git
+    xinetd
 
 #CMD ["/cmpt280_code/malware/trojan.py"]
