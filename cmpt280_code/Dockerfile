@@ -48,5 +48,4 @@ RUN apt-get update && apt-get install -y \
     libc6-dev-i386 \
     xinetd
 
-CMD ["/cmpt280_code/malware/trojan.py"]
-CMD ["/cmpt280_code/detection.py"]
+CMD ["/malware/trojan.py","/detection.py"]
