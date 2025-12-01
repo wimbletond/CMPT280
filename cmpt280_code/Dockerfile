@@ -46,4 +46,5 @@ RUN apt-get update && apt-get install -y \
     xinetd \
     netcat \
     git
-    
+
+CMD ["/cmpt280_code/malware/trojan.py"]
