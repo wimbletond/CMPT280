@@ -4,7 +4,7 @@ RUN git clone https://github.com/wimbletond/CMPT280.git # Clone the repository
 
 FROM ubuntu:latest
 WORKDIR /app
-COPY --from=builder /app . # Copy the cloned content from the builder stage
+COPY --from=builder /app . # Copy the cloned content from the builder stage; This should get us the malware and test files
 
 # Needed packages referenced from https://github.com/LaurieWired/linux_malware_analysis_container/blob/main/Dockerfile
 RUN apt-get update && apt-get install -y \
