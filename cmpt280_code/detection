@@ -49,15 +49,16 @@ def check_files(file1, file2):
 # Run the checker
 print("\nStarting detection...\n")
   
-original_file = "../sample_files/bank_statement.txt"
+original_file = "bank_statement.txt"
+tampered_file = "bank_statement_tampered.txt"
 
 # For demo, we compare the file with itself first to show the system works
 print("TEST 1: Comparing file with itself (should be same)")
 check_files(original_file, original_file)
 
 print("\n" + "=" * 50)
-print("Now run the malware script to generate the tampered file.")
-print("Then come back and run TEST 2 below.")
-print("=" * 50)
+# ------------------ TEST 2 -----------------------------
+print("\nTEST 2: Comparing original vs tampered file")
+check_files(original_file, tampered_file)
 
 
