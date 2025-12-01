@@ -65,6 +65,9 @@ TROUBLESHOOTING
   If using a VM running Ubuntu, try
   $ sudo snap install docker
 
+  Though it isn't recommended from above instructions, also try
+  $ sudo apt install docker.io
+
 - Other Dockerfile building issues
   Try $ sudo docker build -f Dockerfile -t cmpt280-proj .
   Ensure user has appropriate permissions to run Dockerfile
