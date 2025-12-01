@@ -5,7 +5,7 @@ Abdul
 Sharma
 
 
-DOCKER SETUP - Containerize The Program #If Docker is installed, disregard.
+DOCKER SETUP - Containerize The Program #If Docker is installed, proceed to RUNNING DOCKER
 Isolate the program and it's associated files to ensure no actual files are affected
 
 Following instructions are summarized from https://docs.docker.com/engine/install/
@@ -36,8 +36,16 @@ Following instructions are summarized from https://docs.docker.com/engine/instal
 4 - Confirm docker is running
   sudo systemctl status docker
   (If manual start is needed: sudo systemctl start docker)
+
 5 - Verify succesful install
   sudo docker run hello-world
   (This should make a container, download & run a test image, print a confirm message and exit)
 
+RUNNING DOCKER
+1 - Navigate to location of Dockerfile (there is one included in this repo)
+2 - Build the docker image
+  docker build -t cmpt280-proj .
 
+3 - Run the docker image
+  docker run -d -p 9090:80 --name malwaretest cmpt280-proj
+    
