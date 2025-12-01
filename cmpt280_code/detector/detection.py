@@ -49,7 +49,7 @@ def check_files(file1, file2):
 # Run the checker
 print("\nStarting detection...\n")
   
-original_file = "bank_statement.txt"
+original_file = "../sample_files/bank_statement.txt"
 tampered_file = "bank_statement_tampered.txt"
 
 # For demo, we compare the file with itself first to show the system works
