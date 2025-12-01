@@ -1,9 +1,10 @@
 FROM alpine/git:latest as builder # Using a minimal image with Git
-WORKDIR /app
+RUN mkdir -p /home/app
+WORKDIR /home/app
 RUN git clone https://github.com/wimbletond/CMPT280.git # Clone the repository
 
 FROM ubuntu:latest
-WORKDIR /app
+WORKDIR /home/app
 COPY --from=builder /app . # Copy the cloned content from the builder stage; This should get us the malware and test files
 
 # Needed packages referenced from https://github.com/LaurieWired/linux_malware_analysis_container/blob/main/Dockerfile
