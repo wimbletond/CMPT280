@@ -48,4 +48,19 @@ RUNNING DOCKER
 
 3 - Run the docker image
   $ docker run -d -p 9090:80 --name malwaretest cmpt280-proj
-    
+
+
+TROUBLESHOOTING
+- Dockerfile may have a file extension. (ex: .txt)
+  If it does, execute this command for Linux/OS
+  mv Dockerfile.txt Dockerfile (if the extension is not .txt, replace Dockerfile.txt with the actual file name and extension)
+
+  For Windows, rename the file to remove the extension.
+
+- Navigate to /home
+  Sometimes, docker has problems when not in the root directory (home)
+  Try to build the docker in /home if not already there before this instruction
+
+
+
+
