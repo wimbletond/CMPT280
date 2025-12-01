@@ -5,7 +5,7 @@ Abdul
 Sharma
 
 
-DOCKER SETUP - Containerize The Program #If Docker is installed, proceed to containerizing
+DOCKER SETUP - Containerize The Program #If Docker is installed, disregard.
 Isolate the program and it's associated files to ensure no actual files are affected
 
 Following instructions are summarized from https://docs.docker.com/engine/install/
@@ -40,7 +40,4 @@ Following instructions are summarized from https://docs.docker.com/engine/instal
   sudo docker run hello-world
   (This should make a container, download & run a test image, print a confirm message and exit)
 
-CONTAINERIZE THE REPOSITORY
-1 - Clone the current repository
-  $ git clone 
 
