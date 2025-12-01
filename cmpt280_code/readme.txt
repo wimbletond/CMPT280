@@ -61,6 +61,16 @@ TROUBLESHOOTING
   Sometimes, docker has problems when not in the root directory (home)
   Try to build the docker in /home if not already there before this instruction
 
+- Issues with install
+  If using a VM running Ubuntu, try
+  $ sudo snap install docker
+
+- Other Dockerfile building issues
+  Try $ sudo docker build -f Dockerfile -t cmpt280-proj .
+  Ensure user has appropriate permissions to run Dockerfile
+  
+
+
 
 
 
