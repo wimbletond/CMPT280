@@ -1,5 +1,3 @@
 #!/usr/bin/sh
-cd malware &
-python trojan.py
-cd .. &
+python malware\trojan.py
 python detection.py
