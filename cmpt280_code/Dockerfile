@@ -1,7 +1,49 @@
-FROM ubuntu:latest
-
-# Set a working directory inside the container
+FROM alpine/git:latest as builder # Using a minimal image with Git
 WORKDIR /app
+RUN git clone https://github.com/wimbletond/CMPT280.git # Clone the repository
 
-# Clone the Git repository
-RUN git clone https://github.com/wimbletond/CMPT280.git
+FROM ubuntu:latest
+WORKDIR /app
+COPY --from=builder /app . # Copy the cloned content from the builder stage
+
+# Needed packages referenced from https://github.com/LaurieWired/linux_malware_analysis_container/blob/main/Dockerfile
+RUN apt-get update && apt-get install -y \
+    gdb \
+    strace \
+    ltrace \
+    binwalk \
+    yara \
+    hexedit \
+    hexer \
+    wireshark \
+    tcpdump \
+    nmap \
+    p7zip-full \
+    upx-ucl \
+    libimage-exiftool-perl \
+    foremost \
+    scalpel \
+    binutils \
+    elfutils \
+    binutils \
+    checksec \
+    htop \
+    cmake \
+    gcc-multilib \
+    g++-multilib \
+    libc6-dbg \
+    nasm \
+    python3-pip \
+    python3-dev \
+    libssl-dev \
+    libffi-dev \
+    build-essential \
+    manpages-dev \
+    libgmp3-dev \
+    libc6-i386 \
+    libc6-dev-i386 \
+    lib32ncurses5-dev \
+    xinetd \
+    netcat \
+    git
+    
