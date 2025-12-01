@@ -1,8 +1,9 @@
-FROM alpine/git:latest AS builder 
 #Using a minimal image with Git
+FROM alpine/git:latest AS builder 
 RUN mkdir -p /home/app
 WORKDIR /home/app
-RUN git clone https://github.com/wimbletond/CMPT280.git # Clone the repository
+# Clone the repository
+RUN git clone https://github.com/wimbletond/CMPT280.git 
 
 FROM ubuntu:latest
 WORKDIR /home/app
