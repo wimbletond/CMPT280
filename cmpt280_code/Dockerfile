@@ -6,7 +6,6 @@ WORKDIR /home/app
 RUN git clone https://github.com/wimbletond/CMPT280.git 
 
 FROM ubuntu:latest
-WORKDIR /home/app
 COPY --from=builder /app . 
 # Copy the cloned content from the builder stage; This should get us the malware and test files
 
